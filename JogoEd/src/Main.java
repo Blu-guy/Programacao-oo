@@ -1,4 +1,5 @@
 
+
 //O número de tentativas deve ser contabilizado.
 
 // Um placar deve armazenar a pontuação de cada jogador.
@@ -23,18 +24,21 @@ public class Main {
         String nome = scanner.nextLine();
 
         Jogador jogador = new Jogador(nome);
-
+        Jogo jogo = new Jogo(jogador);
+        
+        
        System.out.printf("jogador cadastrado:  " + jogador.getNome());
        boolean acerto = false;
 
        while(!acerto){
-           System.out.println("digite um numero de 1 a 100: ");
-           if (Jogo.jogar(scanner.nextInt())){
+           System.out.println(" \n digite um numero de 1 a 100: ");
+           
+           if (jogo.jogar(scanner.nextInt())){
                System.out.println("Chutes: " +jogador.getTent());
 
                System.out.println("Pontuacao final: "+jogador.getPontos());
             placar.adicionarJogador(jogador);
-
+            placar.mostrarRanking();
             scanner.nextLine();
             acerto = true;
            }
@@ -45,7 +49,7 @@ public class Main {
                 continuar = false;
             }
     }
-
-    }
     scanner.close();
+    
+    }
 }
