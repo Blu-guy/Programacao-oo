@@ -4,7 +4,7 @@ public class Mago extends Personagem {
         super(nome, 40, 45); // menos hp mas mais dano q os outros
     }
 
-    @Override
+    @Override//suas acoes variam da classe pai entao eh usado override ou sobreescrita
     public void defender(int dano) {
         // sem redução de dano
         super.defender(dano);
