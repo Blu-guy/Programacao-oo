@@ -8,7 +8,7 @@ public class MainRpg { //main provido pelo professor
         m.status();//status do mago
         a.status(); //status do arqueiro
 
-        g.atacar(m);
+        g.atacar(m);//acoes que serao realizadas pelas diferentes classes
         m.usarHabilidadeEspecial();
         a.usarHabilidadeEspecial();
 
