@@ -1,8 +1,8 @@
 // subclasse poupanca
-public class ContaPoupanca extends Conta {
+public class ContaPoupanca extends Conta {// heranca da conta poupanca
 
     public ContaPoupanca(String cliente, double saldo) {
-        super(cliente, saldo);
+        super(cliente, saldo);//chamada de metodo de default da classe pai
     }
 
     @Override
