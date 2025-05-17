@@ -1,9 +1,9 @@
 //subclasse conta salario
 
-public class ContaSalario extends Conta {
+public class ContaSalario extends Conta { //heranca sendo extendida
 
     public ContaSalario(String cliente, double saldo) {
-        super(cliente, saldo);
+        super(cliente, saldo); 
     }
 
     @Override
