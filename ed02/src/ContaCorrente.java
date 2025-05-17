@@ -1,12 +1,12 @@
 // subclasse conta corrente
 
-public class ContaCorrente extends Conta {
+public class ContaCorrente extends Conta {//heranca sendo extendida 
 
     public ContaCorrente(String cliente, double saldo) {
         super(cliente, saldo);
     }
 
-    @Override
+    @Override //override usado pois a classe filha age diferente da classe pai
     public void aplicarJurosDiarios(){
         saldo += saldo * 0.001; //0,1% de juros
     }
