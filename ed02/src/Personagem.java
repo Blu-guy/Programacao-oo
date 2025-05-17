@@ -1,10 +1,10 @@
 public abstract class Personagem {
-    protected String nome;
+    protected String nome;//protected  apenas visiveis apenas para aqueles dentro da heranca
     protected int hp;
     protected int ataqueBase;
 
     public Personagem(String nome,int hp, int ataqueBase){
-        this.nome = nome;
+        this.nome = nome;//dados solicitados 
         this.hp = hp;
         this.ataqueBase = ataqueBase;
 }
