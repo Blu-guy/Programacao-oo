@@ -1,5 +1,6 @@
-//aluno :João gabriel
-//ED 04 POO
+//aluno :João gabriel castro de oliveira
+//Ed04 programação orientada a objetos
+//trabalho feito em sala seguindo as intruções do professor 
 
 
 public class Main {
